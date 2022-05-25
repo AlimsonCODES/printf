@@ -7,10 +7,8 @@
  */
 int _print_int(va_list arg)
 {
-int n;
-int len;
+	int len;
 
-n = va_arg(arg, int);
-len = print_number(n);
-return (len);
+	len = print_number(arg);
+	return (len);
 }
